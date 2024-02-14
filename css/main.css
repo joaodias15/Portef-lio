@@ -7,8 +7,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+div {
+    background-image: url('caminho/para/imagem-de-fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+
 body {
-    background-color: black;
     height: 100vh;
 }
 
@@ -25,23 +33,22 @@ body {
     padding: 8px 30px;
     font-size: 15px;
     font-weight: 600;
-    background-color: rgb(132, 39, 239); 
+    background-color: #303F9F ; 
     border: 0;
     border-radius: 30px;
     cursor: pointer;
     transition: .2s;
+    color: white;
 }
 
 h2.titulo {
     color: white;
-    font-size: 28px;
+    font-size: 33px;
     text-align: center;
     margin-top: 70px;
+    text-shadow: 1px 1px 2px #303F9F;
 }
 
-h2.titulo span {
-    color: rgb(132, 39, 239);
-}
 
 /* Cabeçalho */
 
@@ -81,9 +88,10 @@ header nav ul li a{
 }
 
 .btn-contacto button:hover {
-    box-shadow: 0px 0px 8px rgb(132, 39, 239);
+    box-shadow: 0px 0px 8px #303F9F);
     transform: scale(1.05);
 }
+
 
 
 /* Home */
@@ -103,8 +111,13 @@ section.pagina-principal .flex {
     font-size: 43px;
 }
 
+
+.pagina-principal h1 span {
+    color: #303F9F;
+}
+
 .pagina-principal .txt-pagina-principal h1 span {
-    color: rgb(132, 39, 239);
+    color: #303F9F;
 }
 
 .pagina-principal .txt-pagina-principal p {
@@ -118,7 +131,7 @@ section.pagina-principal .flex {
     margin-top: 80px;
     width: 250px;
     border-radius: 10px;
-    box-shadow: 0 0 12px 5px rgb(132, 39, 239);
+    box-shadow: 0 0 12px 5px #303F9F;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
@@ -142,27 +155,77 @@ section.especialidades .flex {
 }
 
 .especialidades .especialidades-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 40px;
+    padding: 30px;
+    width: 200px;
+    min-height: 200px;
     border-radius: 20px;
     margin-top: 70px;
     transition: .2s;
     margin-left: 45px;
+    text-align: center;
 }
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.445);
+    box-shadow: 0 0 15px white;
 }
 
 .especialidades .especialidades-box i {
     font-size: 70px;
-    align-items: center;
-    color: rgb(132, 39, 239);
+    margin-bottom: 15px;
+    color:#303F9F ;
 }
 
 .especialidades .especialidades-box h3 {
-    font-size: 29px;
+    font-size: 25px;
     margin: 15px 0;
+    text-align: center;
 }
 
+.especialidades .especialidades-box p {
+    font-size: 15px;
+}
+
+/* About */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #303F9F;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .img-sobre img {
+    height: auto;
+    margin-top: 80px;
+    width: 310px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px 5px #303F9F;
+}
